@@ -104,12 +104,12 @@
    $(function(){
 	  //更换背景定时器
 	  window.setInterval(function(){
-		  var imgIdx=Math.random()*2;
+		  var imgIdx=Math.random()*6;
 		  imgIdx=Math.round(imgIdx);
 		  if(imgIdx==0)
 			  imgIdx=1;
-		  if(imgIdx>2)
-			  imgIdx=2;
+		  if(imgIdx>5)
+			  imgIdx=5;
 		  $("body").css("background-image","url(imgs/bg"+imgIdx+".jpg)");
 	  },5000);//5秒换一次背景 
 	  
